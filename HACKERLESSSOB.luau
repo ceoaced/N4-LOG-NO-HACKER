@@ -10,6 +10,7 @@ local TDS = loadstring(game:HttpGet("https://getaether.cc/loader.lua"))()
 
 TDS:Loadout("Pyromancer", "Assassin", "Gatling Gun", "Mercenary Base", "Medic")
 TDS:Mode("Act4Easy")
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("PlayerManager"):WaitForChild("RE:UserLoadout"):FireServer()
 
 TDS:Place("Pyromancer", -3.7766623497009277, 0.9999891519546509, -25.652759552001953, true)
 TDS:Ready()
